@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--
+index.html
+Part of CatalogViz Open Source Edition
+Copyright (c) 2014 Philip Wernersbach <philip.wernersbach@gmail.com>
+
+=====
+CatalogViz Open Source Edition is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+CatalogViz Open Source Edition is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with CatalogViz Open Source Edition.  If not, see <http://www.gnu.org/licenses/>.
+=====
+
+Commercial and proprietary licenses for CatalogViz are also available, contact
+Philip Wernersbach <philip.wernersbach@gmail.com> for more details.
+-->
+
+<html>
+<head>
+	<title>CatalogViz Visualization</title>
+
+	<link href="stylesheets/catalogviz.css" rel="stylesheet"></link>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/cytoscape.min.js"></script>
+	<script type="text/javascript" src="javascripts/catalogviz.js"></script>
+</head>
+
+<body>
+	<div id="info">
+		Input a course name to see its dependencies: 
+		
+		<form id="course_input_form">
+			<input type="text" id="course_input"></input>
+			<input type="submit" value="Search"></input>
+			<input type="checkbox" id="exact_only">Exact Matches Only</input>
+		</form>
+		
+		<a id="what_is_this" href="info.html">What is this?</a>
+	</div>
+	<div id="cy"></div>
+	<div id="please_wait">
+		<div id="please_wait_center"><h1>Building graph, please wait...</h1></div>
+	</div>
+</body>
+
+</html>

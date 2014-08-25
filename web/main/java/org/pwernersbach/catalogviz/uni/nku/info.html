@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--
+index.html
+Part of CatalogViz Open Source Edition
+Copyright (c) 2014 Philip Wernersbach <philip.wernersbach@gmail.com>
+
+=====
+CatalogViz Open Source Edition is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+CatalogViz Open Source Edition is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with CatalogViz Open Source Edition.  If not, see <http://www.gnu.org/licenses/>.
+=====
+
+Commercial and proprietary licenses for CatalogViz are also available, contact
+Philip Wernersbach <philip.wernersbach@gmail.com> for more details.
+-->
+
+<html>
+<head>
+	<title>Visualization Info</title>
+
+	<link href="stylesheets/info.css" rel="stylesheet"></link>
+</head>
+
+<body>
+	<h1>What is this?</h1>
+
+	<div>
+		<p>
+			This app visualizes the dependency trees for a course that you enter.
+
+			That is, when you enter the full or partial name of a course and click "Search", the
+			app will display that course, all of its corequisites and prerequisites, all of the
+			corequisites and prerequisites for those courses, and so on and so forth.
+		</p>
+		<p>
+			The app visualizes the dependency trees in the form of a directed graph, which can be
+			manipulated using your mouse. You can click and drag the graph, use the mouse scroll
+			wheel to zoom into the graph, and drag individual circles in the graph around.
+		</p>
+	</div>
+
+	<div>
+		<p>
+			Classes are represented by circles, and the arrows that point from one circle to another
+			represent dependencies.
+		</p>
+		<p>
+			<span id="green">Green</span> arrows represent corequisites.
+		</p>
+		<p>
+			<span id="blue">Blue</span> arrows represent prerequisites.
+		</p>
+	</div>
+
+	<div>
+		<p>
+			The larger circles in the middle represent courses that are prerequisites or corequisites
+			for a large number of other courses. The smaller circles in the outer portions of the graph are
+			prerequisites or corequisites for either a few courses, or no courses at all.
+		</p>
+	</div>
+</body>
+
+</html>
