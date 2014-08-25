@@ -1,8 +1,10 @@
 bin
+src
 dependencies
 .classpath
 .project
 .settings
+*.dev.js
 
 *.class
 
