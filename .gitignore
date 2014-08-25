@@ -1,3 +1,11 @@
+bin
+src
+dependencies
+.classpath
+.project
+.settings
+*.dev.js
+
 *.class
 
 # Mobile Tools for Java (J2ME)
