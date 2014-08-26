@@ -30,9 +30,11 @@ Philip Wernersbach <philip.wernersbach@gmail.com> for more details.
 
 	<link href="stylesheets/catalogviz.css" rel="stylesheet"></link>
 
+	<!--[if gte IE 9]><!-->
 	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="javascripts/cytoscape.min.js"></script>
 	<script type="text/javascript" src="javascripts/catalogviz.js"></script>
+	<!--<![endif]-->
 </head>
 
 <body>
@@ -49,7 +51,20 @@ Philip Wernersbach <philip.wernersbach@gmail.com> for more details.
 	</div>
 	<div id="cy"></div>
 	<div id="please_wait">
-		<div id="please_wait_center"><h1>Building graph, please wait...</h1></div>
+		<div id="upgrade_required" class="please_wait_center">
+			<h1>This application uses advanced web features, and requires a modern browser.</h1>
+			<h1>To use this application, upgrade to one of the following:</h1>
+			<br />
+			<h1>Supported Browsers:</h1>
+			<h1>Latest versions of <a href="http://www.google.com/chrome/browser/">Chrome</a>, <a href="http://www.mozilla.org/firefox/">Firefox</a>, <a href="http://www.opera.com">Opera</a>, and <a href="https://www.apple.com/safari">Safari</a>.</h1>
+			<h1>Internet Explorer versions 9, 10, and 11.</h1>
+		</div>
+
+		<!--[if gte IE 9]><!-->
+		<div id="building_graph" class="please_wait_center hide_by_default">
+			<h1>Building graph, please wait...</h1>
+		</div>
+		<!--<![endif]-->
 	</div>
 </body>
 

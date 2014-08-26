@@ -37,8 +37,12 @@
   z-index: 500;
 }
 
-#please_wait_center {
+.please_wait_center {
   margin-top: 25%;
+}
+
+.hide_by_default {
+  display: none;
 }
 
 #cy {
